@@ -619,6 +619,8 @@ class FlashInferIndicesUpdaterPrefill:
                 self.num_qo_heads,
                 self.num_kv_heads,
                 self.head_dim,
+                q_data_type=self.q_data_type,
+                kv_data_type=self.data_type,
             )
 
         # cached part
@@ -632,6 +634,8 @@ class FlashInferIndicesUpdaterPrefill:
             self.num_kv_heads,
             self.head_dim,
             1,
+            q_data_type=self.q_data_type,
+            kv_data_type=self.data_type,
         )
 
 
